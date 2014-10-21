@@ -29,7 +29,7 @@
 -(void)checkTime:(id)sender{
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:@"hh:mm:ss"];
-    [self.timeLabel2 setText:[formatter stringFromDate:[NSDate date]]];
+    [self.timeLabel setText:[formatter stringFromDate:[NSDate date]]];
     
     //recurse
     [self performSelector:@selector(checkTime:) withObject:self afterDelay:1.0];

@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UIView *timeLabel;
-@property (strong, nonatomic) IBOutlet UILabel *timeLabel2;
+@property (strong, nonatomic) IBOutlet UILabel *timeLabel;
+
 
 
 @end

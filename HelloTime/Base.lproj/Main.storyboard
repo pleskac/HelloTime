@@ -25,13 +25,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="i7a-s0-pmD" secondAttribute="centerX" id="SK2-uP-iFE"/>
-                            <constraint firstAttribute="centerY" secondItem="i7a-s0-pmD" secondAttribute="centerY" id="cOF-84-Rak"/>
+                            <constraint firstAttribute="centerX" secondItem="i7a-s0-pmD" secondAttribute="centerX" id="QRd-r1-JCc"/>
+                            <constraint firstAttribute="centerY" secondItem="i7a-s0-pmD" secondAttribute="centerY" id="xwY-r7-ARk"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="timeLabel" destination="8bC-Xf-vdC" id="tq8-NQ-iJd"/>
-                        <outlet property="timeLabel2" destination="i7a-s0-pmD" id="wUl-a1-gob"/>
+                        <outlet property="timeLabel" destination="i7a-s0-pmD" id="4gF-MT-EuZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
