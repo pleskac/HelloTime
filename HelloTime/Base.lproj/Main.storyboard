@@ -22,14 +22,28 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sgc-8H-ivY">
+                                <rect key="frame" x="235" y="362" width="131" height="30"/>
+                                <state key="normal" title="Night Mode">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggleNight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v1f-kj-UMo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="i7a-s0-pmD" secondAttribute="centerX" id="QRd-r1-JCc"/>
+                            <constraint firstAttribute="centerY" secondItem="sgc-8H-ivY" secondAttribute="centerY" id="Ro1-w2-CX0"/>
+                            <constraint firstAttribute="centerX" secondItem="sgc-8H-ivY" secondAttribute="centerX" id="WaV-VH-s66"/>
+                            <constraint firstAttribute="centerX" secondItem="sgc-8H-ivY" secondAttribute="centerX" id="WiU-IF-cJ7"/>
                             <constraint firstAttribute="centerY" secondItem="i7a-s0-pmD" secondAttribute="centerY" id="xwY-r7-ARk"/>
+                            <constraint firstAttribute="centerY" secondItem="sgc-8H-ivY" secondAttribute="centerY" constant="-77" id="yyM-gP-lxE"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="nightButton" destination="sgc-8H-ivY" id="VO5-hr-E2N"/>
                         <outlet property="timeLabel" destination="i7a-s0-pmD" id="4gF-MT-EuZ"/>
                     </connections>
                 </viewController>

@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UILabel *timeLabel;
+@property (strong, nonatomic) IBOutlet UIButton *nightButton;
+- (IBAction)toggleNight:(id)sender;
 
 
 

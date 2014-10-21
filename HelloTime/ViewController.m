@@ -35,4 +35,19 @@
     [self performSelector:@selector(checkTime:) withObject:self afterDelay:1.0];
 }
 
+- (IBAction)toggleNight:(id)sender {
+    if ([self.nightButton.titleLabel.text isEqualToString:@"Night Mode"]){
+        [self.timeLabel setTextColor:[UIColor whiteColor]];
+        self.view.backgroundColor = [UIColor blackColor];
+        [self.nightButton setTitle:@"Day Mode" forState:UIControlStateNormal];
+    }
+    else{
+        [self.timeLabel setTextColor:[UIColor blackColor]];
+        self.view.backgroundColor = [UIColor whiteColor];
+        [self.nightButton setTitle:@"Night Mode" forState:UIControlStateNormal];
+    }
+
+}
+
+
 @end
