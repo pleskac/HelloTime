@@ -53,10 +53,12 @@
     if(size.height > size.width){
         //portrait
         NSLog(@"Switch to portrait");
+        [self.nightButton setHidden:false];
     }
     else{
         //landscape
         NSLog(@"Switch to landscape");
+        [self.nightButton setHidden:true];
     }
 }
 
