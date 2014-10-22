@@ -16,8 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
     
+    // Do any additional setup after loading the view, typically from a nib.
     [self checkTime:self];
 }
 
@@ -48,6 +48,18 @@
     }
 
 }
+
+-(void) viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator{
+    if(size.height > size.width){
+        //portrait
+        NSLog(@"Switch to portrait");
+    }
+    else{
+        //landscape
+        NSLog(@"Switch to landscape");
+    }
+}
+
 
 
 @end
